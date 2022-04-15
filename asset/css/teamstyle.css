@@ -1,0 +1,359 @@
+/* 전체 레이아웃 */
+* {
+    font-family: 'BMJua';
+}
+#wrap {
+    height: 2000px;
+}
+.gray { 
+    background: #f5f5f5;
+} 
+.white {
+    background: #fff !important;
+}
+body {
+    background: #F8F8FF;
+}
+/* 컨테이너 */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #999; */
+}
+
+/* 헤더 */
+.hWrap {
+    width: 100%;
+    background: #F8F8FF;
+    padding-top: 50px;
+}
+#header {
+    font-family: 'BMJua';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+}
+.hTitle {
+    font-size: 2.5vw;
+}
+.hSide {
+    display: flex;
+}
+.hBtn {
+    width: 80px;
+    height: 20px;
+    background: #cacaca;
+    margin-right: 1vw;
+    border-radius: 10px;
+}
+.hMenu {
+    display: flex;
+}
+.hMenu li {
+    margin-left: 3vw;
+}
+.hMenu li a {
+    font-size: 1.1vw;
+}
+
+
+/* footer */
+.footer {
+    padding: 100px 0;
+    font-family: 'GmarketSans';
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    margin-bottom: 50px;
+}
+.footer-menu > div {
+    width: 16%;
+}
+.footer-menu > div h3 {
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+.footer-menu > div li a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    position: relative;
+    color: rgb(96, 96, 96);
+    transition: all 0.3s;
+}
+.footer-menu > div li a:hover {
+    color: rgb(0, 0, 0);
+}
+.footer-menu > div li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+.footer-menu > div li a:hover::before {
+    transform: scaleX(1);
+    color: #000;
+}
+
+.footer-rights {
+    text-align: center;
+}
+
+.footer-sns {
+    margin-top: 10px;
+}
+.footer-sns ul {
+    display: flex;
+    justify-content: center;
+}
+.footer-sns li a {
+    width: 30px; 
+    height: 30px;
+    margin: 4px 6px;
+    display: inline-block;
+    background-image: url(../img/bg-svg.svg);
+}
+.footer-sns li:nth-child(2) a {
+    background-position: -50px 0;
+}
+.footer-sns li:nth-child(3) a {
+    background-position: -100px 0;
+}
+.footer-sns li:nth-child(4) a {
+    background-position: -150px 0;
+}
+
+
+/* 회원가입,로그인 : join-type */
+.join-type {
+    padding: 100px 0;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+} 
+.social > div {
+    width: 150px;
+    height: 28px;
+    background: #F7F7F8;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 14px;
+}
+.social img {
+    width: 15px;
+    height: 15px;
+    padding-top: 5px;
+    margin-right: 5px;
+    vertical-align: -3px;
+}
+.or { 
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+} 
+.or::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 10px;
+    border: 1px solid #F7F7F8;
+    width: 200px;
+}
+.or::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 10px;
+    border: 1px solid #F7F7F8;
+    width: 200px;
+}
+.member-form {
+    max-width: 600px;
+    border: 1px solid #dedede;
+    background: #fff;
+    margin: 0 auto;
+    padding: 50px;
+}
+.member-form .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.member-form .logo img {
+    width: 60px;
+    height: 60px;
+}
+.member-form h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.join-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.join-box input {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #F7F7F8;
+    width: 100%;
+    height: 35px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
+input::-webkit-input-placeholder {
+    color: #bcbcbc;
+    font-size: 12px;
+}
+input:-ms-input-placeholder {
+    color: #bcbcbc;
+    font-size: 12px;
+}
+input::placeholder {
+    color: #bcbcbc;
+    font-size: 12px;
+}
+.join-submit {
+    font-family: 'BMJua';
+    font-size: 16px;
+    background: #605BFF;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 50px;
+} 
+.join-submit:hover {
+    transform: scale(1.05);
+}
+#agree {
+    height: 10px;
+    display: inline;
+    width: 10px;
+}
+.agree a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #605BFF;
+}
+.already {
+    text-align: center;
+    margin-top: 10px;
+}
+.already a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #605BFF;
+}
+/* login */
+.login-type {
+    padding: 100px 0;
+    font-family: 'BMJua';
+}
+.login-type .member-form h3 {
+    margin-top: 30px;
+}
+.login-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.login-box input {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: #F7F7F8;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.login-submit {
+    font-family: 'BMJua';
+    font-size: 16px;
+    background: #605BFF;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+}
+.login-submit:hover { 
+    transform: scale(1.05);
+}
+.another {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.another img {
+    width: 21px;
+    height: 21px;
+    margin: 0 10px;
+} 
+.another img:hover {
+    cursor: pointer;
+}
+.other {
+    text-align: right;
+}
+.other a {
+    color: #605BFF;
+}
+.other a:nth-child(1)::after {
+    content: '';
+    border: 0.5px solid #A3A0F6;
+    width: 1px;
+    height: 10px;
+    margin: 0 0 0 5px;
+}
+/* 페이지 */
+.board__pages {
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+.board__pages ul {
+    display: flex;
+    justify-content: center;
+}
+.board__pages ul li.active a {
+    background: #000;
+    color: #fff;
+}
+.board__pages ul li a {
+    display: block;
+    border: 1px solid #eee;
+    padding: 14px 10px;
+    font-size: 14px;
+    margin-left: -1px;
+}
+/* 오류메시지 */
+.comment {
+    float: right;
+    font-size: 14px;
+    color: red;
+}
